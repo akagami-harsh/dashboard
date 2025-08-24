@@ -132,4 +132,4 @@ jobs:
         run: |
           cd components/centraldashboard-angular/frontend
           npm run serve & npx wait-on http://localhost:4200
-          npm run ui-test-ci-all
+          DISPLAY=:99 xvfb-run -a npm run ui-test-ci-all
