@@ -70,7 +70,7 @@ jobs:
 
     - name: Deploy CentralDashboard-Angular Component
       run: |
-        ./testing/gh-actions/deploy_component.sh \
+        ./testing/shared/deploy_component.sh \
           "centraldashboard-angular" \
           "components/centraldashboard-angular" \
           "${DASHBOARD_IMG}" \
