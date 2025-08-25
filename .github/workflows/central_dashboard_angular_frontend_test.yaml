@@ -72,6 +72,10 @@ jobs:
         with:
           node-version: 16
 
+      - name: Setup Firefox for testing
+        run: |
+          sudo snap install firefox
+
       - name: Install KinD
         run: ./testing/gh-actions/install_kind.sh
 
